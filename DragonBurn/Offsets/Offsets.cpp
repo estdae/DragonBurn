@@ -57,13 +57,13 @@ void Offsets::SetOffsets(const std::string& offsetsData, const std::string& butt
     this->Pawn.AbsVelocity = client_dllJson["C_BaseEntity"]["fields"]["m_vecAbsVelocity"];
     this->Pawn.m_bWaitForNoAttack = client_dllJson["C_CSPlayerPawn"]["fields"]["m_bWaitForNoAttack"];
 
-    this->GlobalVar.RealTime = 0x00;
-    this->GlobalVar.FrameCount = 0x04;
+    this->GlobalVar.RealTime = 0x0000;
+    this->GlobalVar.FrameCount = 0x0004;
     this->GlobalVar.MaxClients = 0x10;
     this->GlobalVar.IntervalPerTick = 0x14;
-    this->GlobalVar.CurrentTime = 0x2C;
-    this->GlobalVar.CurrentTime2 = 0x30;
-    this->GlobalVar.TickCount = 0x40;
+    this->GlobalVar.CurrentTime = 0x0034;
+    this->GlobalVar.CurrentTime2 = 0x0038;
+    this->GlobalVar.TickCount = 0x0048;
     this->GlobalVar.IntervalPerTick2 = 0x44;
     this->GlobalVar.CurrentNetchan = 0x0048;
     this->GlobalVar.CurrentMap = 0x0180;
